@@ -20,7 +20,7 @@ if(Game == 0){
 	JOptionPane.showMessageDialog(null, "You you decide to make a game");
 }
 //Yes
-int work = JOptionPane.showOptionDialog(null, "How hard do you want to work?", null, 0, 2,  null, working, null);
+int work = JOptionPane.showOptionDialog(null, "How hard do you want to work??", null, 0, 2,  null, working, null);
 		
 		
 		
