@@ -21,14 +21,7 @@ public static void main(String[] args) {
 		rob.penDown();
 		for(int z=0;z<20;z++) {
 		for(int y=0;y<20;y++) {
-		for(int x=0; x<6;x++) {
-		rob.move(15);
-		rob.penUp();
-		rob.move (10);
-		rob.penDown();
-		rob.move(15);
-		rob.turn(144);
-		}
+		for(int x=0; x<6;x++) {}
 rob.penUp();
 rob.turn(-144);
 rob.move(10);
