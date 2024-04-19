@@ -7,22 +7,37 @@ public class WalkOfFame {
 
 public static void main(String[] args) {
 	
-	int baseSize = 200;
+	
 	Robot rob = new Robot();
 	 rob.setWindowSize (1000,1000);
+	 int robY =17;
 		rob.setX(0);
+		rob.setY(robY);
 	
-		rob.setSpeed(500);
+		rob.setSpeed(1000);
 		rob.setPenColor(245,55,0);
 		rob.turn(90);
-		rob.move(400);
-		rob.penDown();
 		
-	
-		rob.move(100);
+		rob.penDown();
+		for(int z=0;z<20;z++) {
+		for(int y=0;y<20;y++) {
+		for(int x=0; x<6;x++) {
+		rob.move(15);
+		rob.penUp();
+		rob.move (10);
+		rob.penDown();
+		rob.move(15);
 		rob.turn(144);
-		rob.move(100);
-		rob.turn(-90);
+		}
+rob.penUp();
+rob.turn(-144);
+rob.move(10);
+		}
+		robY += 40;
+		rob.setX(0);
+		rob.setY(robY);
+		}
+		rob.penUp();
 		rob.move(100);
 		//rob.turn(144);
 		//rob.move(100);
