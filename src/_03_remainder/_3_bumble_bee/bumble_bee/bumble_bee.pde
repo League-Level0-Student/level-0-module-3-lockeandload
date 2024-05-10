@@ -10,6 +10,20 @@ void draw() {
   
 // First run the program and you should see a flower.  
   
+  int x = 5;
+  for (int y=0; y<45; y++) {
+   if(y%2==0){
+    fill(255, 255, 0 );
+   }else{
+    fill(22, 10, 30);
+    }  
+    x = x+=10;
+       ellipse(x, x, 50, 50);
+}
+
+
+drawBeeFace(x,x);
+}
   
 /* Then, use a loop to make a body for the Bee! 
 (see the image on the recipe, it's a diagonal line of circles)
@@ -22,7 +36,7 @@ Use remainder to make the colors alternate between yellow and black
 Now put his head on using drawBeeFace(x,y)
 */
 
-}
+
 
 /**************   Use these methods but  DON'T CHANGE THE CODE BELOW  **************/
 
@@ -58,4 +72,5 @@ void drawBeeFace(int BeeFaceX, int BeeFaceY) {
       ellipse(BeeFaceX, BeeFaceY+10, 20, 10);// mouth
      fill(255, 251, 28);
      ellipse(BeeFaceX, BeeFaceY+5, 20, 6);
+     
 }
